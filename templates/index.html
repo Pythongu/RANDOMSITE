@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="home-page">
+        {% block content %}
+        <h1>Home Page</h1>
+        <p>Welcome to RANDOMWEBSITE Home Page!</p>
+        <a href="http://127.0.0.1:5000/sign-up/">SIGN UP</a>
+        {% endblock %}
+    </div>
+    <script
+        type="text/javascript" 
+        src="{{ url_for('static', filename='index.js')}}"
+    ></script>
+    <style>
+        .home-page{
+            font-family: Arial;
+        }
+    </style>
+</body>
+</html>
